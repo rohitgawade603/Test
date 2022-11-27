@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 350px;
+            border: 1px solid black;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Input radius value and get the value of a sphere.</p>
+        <div class="volume-container">
+            <label>Radius</label><br>
+            <input type="number" id="radius-input"><br> 
+            <label>Volume</label><br>
+            <input type="number" id="volume-input"><br><br>
+            <button class="calc">Calculate</button><br>
+        </div>
+    </div>
+
+    <script>
+        //selectors
+        const radiusInput = document.getElementById('radius-input');
+        const volumeInput = document.getElementById('volume-input');
+        const calcBtn = document.getElementsByClassName('calc')[0];
+
+        //function/ Calculations
+        function volumeOfSphere() {
+            let radius = radiusInput.value;
+            let volume = (4/3)*3.14*(radius ** 3);
+            return volume;
+        }
+
+        //Event listener
+        calcBtn.addEventListener('click', () => {
+            let volume = volumeOfSphere();
+            volumeInput.value = volume;
+        })
+    </script>
+</body>
+</html>
