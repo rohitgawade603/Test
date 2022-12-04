@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    /* background-color: gray; */
+}
+
+#colors{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#color1{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: gray;
+    border: 3px solid black;
+}
+
+#color2{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid black;
+}
+
+#color3{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: blue;
+    border: 3px solid black;
+}
+
+#color4{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 3px solid black;
+}
+
+#colors:hover{
+    cursor: pointer;
+}
