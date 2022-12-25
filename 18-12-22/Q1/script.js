@@ -16,8 +16,10 @@ function init() {
 
 async function fetchData(){
     const streamResponse = await fetch(`http://universities.hipolabs.com/search?country=${countryInput.value}`);
-    const textBody = await streamResponse.text();
-    const jsonData = JSON.parse(textBody);
+    // const textBody = await streamResponse.text();
+    // const jsonData = JSON.parse(textBody);
+        const jsonData = await streamResponse.json();
+        console.log(jsonData);
     render(jsonData);
 }
 

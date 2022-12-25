@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    text-align: center  ;
+}
+
+.info{
+    margin: 20px;
+}
+
+label{
+    display: inline-block;
+    width: 140px;
+    text-align: start;
+}
+
+input{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.is-invalid{
+    border: 2px solid red;
+}
+
+.is-valid{
+    border: 2px solid green;
+}
